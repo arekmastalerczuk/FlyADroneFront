@@ -1,38 +1,103 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+input {
+  display: block;
+  width: 95%;
+  line-height: 2rem;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 1rem;
+  margin: 10px 0 0 0;
+}
+
+label {
+  display: block;
+  margin: 10px 0 10px 10px;
+}
+
+.footer__copyrights {
+  padding: 10px;
+  background-color: #3B3355;
+  color: #BFCDE0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  display: inline-block;
+  width: 100%;
+  background-color: #5D5D81;
+  color: #F8F4E3;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header__button, .search__button {
+  border: none;
+  border-radius: 3px;
+  background-color: #EC4E20;
+  color: #F8F4E3;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header__button {
+  margin-right: 100px;
+}
+
+.header__section {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 10px;
+}
+
+.header__title {
+  font-weight: normal;
+  font-size: 1.4rem;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: calc(100vh - 135px);
+}
+
+.map {
+  width: 75%;
+  background-color: #F8F4E3;
+}
+
+.menu__list {
+  display: inline-block;
+}
+
+.menu__item {
+  display: inline-block;
+}
+
+.menu__link {
+  margin: 10px;
   color: white;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.search {
+  width: 25%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search__button {
+  display: block;
+  margin: 10px auto;
+}
+
+.search__title, .weather-info__title {
+  font-size: 1.2rem;
+  margin: 5px
 }
