@@ -1,0 +1,25 @@
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: calc(100vh - 135px);
+}
+
+.search {
+    width: 25%;
+}
+
+.search input {
+    display: block;
+    width: 95%;
+    line-height: 2rem;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 1rem;
+    margin: 10px 0 0 0;
+}
+
+.search label {
+    display: block;
+    margin: 10px 0 10px 10px;
+}

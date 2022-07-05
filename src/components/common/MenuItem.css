@@ -1,0 +1,9 @@
+.menu__item {
+    display: inline-block;
+}
+
+.menu__link {
+    margin: 10px;
+    color: #F8F4E3;;
+    text-decoration: none;
+}
