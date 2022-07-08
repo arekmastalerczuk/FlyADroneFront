@@ -1,4 +1,7 @@
 .map {
     width: 75%;
-    background-color: #F8F4E3;
+}
+
+.leaflet-container {
+    height: 100%
 }
