@@ -1,6 +1,6 @@
 import React from 'react';
 import {Searcher} from "../../Searcher/Searcher";
-import {WeatherInfo} from "../../WratherInfo/WeatherInfo";
+import {WeatherInfo} from "../../WeatherInfo/WeatherInfo";
 import './SideMenu.css';
 
 export const SideMenu = () => {

@@ -1,8 +1,8 @@
 import {createContext} from "react";
 
 export const SearchContext = createContext({
-    city: '',
-    setCity: (s: string) => {
+    town: '',
+    setTown: (s: string) => {
     },
     street: '',
     setStreet: (s: string) => {

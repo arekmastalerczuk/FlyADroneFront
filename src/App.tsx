@@ -5,10 +5,10 @@ import {MainContent} from "./components/layout/MainContent/MainContent";
 import {SearchContext} from './contexts/search.context';
 
 export const App = () => {
-    const [city, setCity] = useState('');
+    const [town, setTown] = useState('');
     const [street, setStreet] = useState('');
     return (
-        <SearchContext.Provider value={{city, setCity, street, setStreet}}>
+        <SearchContext.Provider value={{town, setTown, street, setStreet}}>
             <Header/>
             <MainContent/>
             <Footer/>
