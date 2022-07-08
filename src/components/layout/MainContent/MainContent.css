@@ -1,0 +1,7 @@
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: calc(100vh - 135px);
+}
+
