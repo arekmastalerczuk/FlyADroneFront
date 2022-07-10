@@ -12,7 +12,6 @@ export const SingleSpot = (props: Props) => {
         (async () => {
             const res = await fetch(`http://localhost:3001/spot/${props.id}`);
             const data = await res.json();
-            console.log(data);
             setSpot(data);
         })();
     }, []);

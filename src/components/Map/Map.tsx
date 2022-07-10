@@ -1,16 +1,28 @@
-import React, {useContext, useEffect} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import {MapContainer, Marker, Popup, TileLayer} from "react-leaflet";
+import {SearchContext} from "../../contexts/search.context";
 import './Map.css';
 import 'leaflet/dist/leaflet.css';
 import '../../utils/fix-map-icon';
-import {SearchContext} from "../../contexts/search.context";
+import {SimpleSpotEntity} from 'types';
+import {SingleSpot} from "./SingleSpot";
 
 export const Map = () => {
     const {town, street} = useContext(SearchContext);
-    const spot = `${town} ${street}`
+    const searchAddress = `${town} ${street}`
+    const [spots, setSpots] = useState<SimpleSpotEntity[]>([]);
+
+    // useEffect(() => {
+    //
+    // }, [searchAddress]);
+
     useEffect(() => {
-        console.log('Make request to search for', spot);
-    }, [spot])
+        (async () => {
+            const res = await fetch(`http://localhost:3001/spot/search/${town}`);
+            const data = await res.json();
+            setSpots(data);
+        })();
+    }, [town]);
 
     return <>
         <div className="map">
@@ -19,12 +31,15 @@ export const Map = () => {
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     attribution="&copy; <a href='https://www.openstreetmap.org/copyritht'>OpenStreetMap</a> & contributors"
                 />
-                <Marker position={[50.265759, 19.025570]}>
-                    <Popup>
-                        <h3>Spodek</h3>
-                        <p>Hala widowiskowo-sportowa</p>
-                    </Popup>
-                </Marker>
+                {
+                    spots.map(spot => (
+                        <Marker key={spot.id} position={[spot.latitude, spot.longitude]}>
+                            <Popup>
+                                <SingleSpot id={spot.id}/>
+                            </Popup>
+                        </Marker>
+                    ))
+                }
             </MapContainer>
         </div>
     </>
