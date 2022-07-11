@@ -6,6 +6,11 @@
     margin: 10px;
 }
 
+.header__section a {
+    display: block;
+    margin-right: 200px;
+}
+
 .header__title {
     font-weight: normal;
     font-size: 1.4rem;

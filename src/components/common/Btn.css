@@ -1,9 +1,12 @@
-.btn {
+.btn, button {
     border: none;
+    font-size: 1rem;
     border-radius: 3px;
     background-color: #EC4E20;
     color: #F8F4E3;
-    padding: 10px 30px;
+    padding: 15px 30px;
     text-transform: uppercase;
     letter-spacing: 4px;
+    text-decoration: none;
+    cursor: pointer;
 }

@@ -2,6 +2,6 @@
     display: flex;
     flex-wrap: wrap;
     width: 100vw;
-    height: calc(100vh - 135px);
+    height: calc(100vh - var(--header-height) - var(--footer-height));
 }
 

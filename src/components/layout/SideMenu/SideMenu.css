@@ -1,5 +1,5 @@
 .side-menu {
-    width: 20%;
+    width: var(--side-menu-width);
 }
 
 

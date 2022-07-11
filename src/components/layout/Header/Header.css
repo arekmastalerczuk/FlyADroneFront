@@ -1,6 +1,7 @@
 .header {
     display: inline-block;
     width: 100%;
+    height: var(--header-height);
     background-color: #5D5D81;
     color: #F8F4E3;
     padding: 10px;

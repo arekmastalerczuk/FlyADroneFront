@@ -1,5 +1,5 @@
 .map {
-    width: 80%;
+    width: calc(100% - var(--side-menu-width));
 }
 
 .leaflet-container {
