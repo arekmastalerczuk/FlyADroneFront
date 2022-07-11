@@ -1,0 +1,38 @@
+.add-spot__form h2, .add-spot__form h3 {
+    color: #3B3355;
+}
+
+.add-spot__form {
+    margin: 0 auto;
+    padding: 20px;
+    min-height: calc(100vh - var(--header-height) - var(--footer-height));
+    width: 850px;
+}
+
+.add-spot__form button {
+    display: block;
+    width: 80%;
+    margin: 40px auto 0;
+}
+
+
+.add-spot__form input, .add-spot__form textarea {
+    max-width: 100%;
+    min-width: 100%;
+    padding: 10px;
+}
+
+.add-spot__form label {
+    display: block;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.add-spot__form small {
+    font-weight: normal;
+}
+
+.add-spot__form textarea {
+    border: 2px solid;
+    border-radius: 4px;
+}
