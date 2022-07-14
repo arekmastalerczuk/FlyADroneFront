@@ -1,0 +1,25 @@
+.weather-info {
+    margin-left: 10px;
+}
+
+.weather-good, .weather-bad {
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    width: 70%;
+    color: white;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.weather-good {
+    background-color: #16a34a;
+}
+
+.weather-bad {
+    background-color: #b91c1c;
+}
+
+.datetime {
+    margin: 20px 0;
+}

@@ -18,15 +18,15 @@ export const Map = () => {
 
     useEffect(() => {
         (async () => {
-            const res = await fetch(`http://localhost:3001/spot/search/${town}`);
+            const res = await fetch(`http://localhost:3001/spot/search/${searchAddress}`);
             const data = await res.json();
             setSpots(data);
         })();
-    }, [town]);
+    }, [searchAddress]);
 
     return <>
         <div className="map">
-            <MapContainer center={[50.259490, 19.022222]} zoom={16}>
+            <MapContainer center={[51.7731368, 19.3370743]} zoom={7}>
                 <TileLayer
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     attribution="&copy; <a href='https://www.openstreetmap.org/copyritht'>OpenStreetMap</a> & contributors"

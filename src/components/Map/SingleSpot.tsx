@@ -23,6 +23,7 @@ export const SingleSpot = (props: Props) => {
     return <>
         <h3>{spot.name}</h3>
         {spot.description && <p><b>Opis:</b><br/>{spot.description}</p>}
+        {spot.spotAddress && <p><b>Adres:</b><br/>{spot.spotAddress}</p>}
         {spot.siteUrl && <p><b>Strona www:</b><br/><a href={spot.siteUrl} target="_blank" title="otwarcie w nowym oknie"
                                                       rel="noreferrer">{spot.siteUrl}</a></p>}
         {spot.facebookUrl &&
