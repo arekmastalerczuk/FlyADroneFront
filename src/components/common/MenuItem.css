@@ -3,7 +3,13 @@
 }
 
 .menu__link {
-    margin: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
     color: #F8F4E3;;
     text-decoration: none;
+    transition: .5s;
+}
+
+.menu__link:hover {
+    background-color: #3B3355;
 }

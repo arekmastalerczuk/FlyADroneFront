@@ -55,7 +55,10 @@ export const AddForm = () => {
     }
 
     if (id) {
-        return <h2>Miejscówka "{form.name}" została dodana pod id: {id}</h2>
+        return <div className="add-info">
+            <h2>Miejscówka "{form.name}" została dodana pod id: {id}</h2>
+            <Btn text="Powrót do strony głównej" to="/"/>
+        </div>
     }
 
     return (

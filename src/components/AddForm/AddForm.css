@@ -1,3 +1,14 @@
+.add-info a {
+    display: block;
+    margin: 50px auto;
+    text-align: center;
+    width: 40%;
+}
+
+.add-info h2 {
+    margin: 40px;
+}
+
 .add-spot__form h2, .add-spot__form h3 {
     color: #3B3355;
 }
