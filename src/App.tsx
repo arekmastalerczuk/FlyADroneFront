@@ -5,6 +5,7 @@ import {Header} from './components/layout/Header/Header';
 import {MainContent} from "./components/layout/MainContent/MainContent";
 import {Footer} from "./components/layout/Footer/Footer";
 import {AddForm} from './components/AddForm/AddForm';
+import {About} from "./components/About/About";
 
 export const App = () => {
     const [town, setTown] = useState('');
@@ -15,6 +16,7 @@ export const App = () => {
             <Routes>
                 <Route path="/" element={<MainContent/>}/>
                 <Route path="/add" element={<AddForm/>}/>
+                <Route path="/about" element={<About/>}/>
             </Routes>
             <Footer/>
         </SearchContext.Provider>
