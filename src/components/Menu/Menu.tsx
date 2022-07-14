@@ -8,8 +8,8 @@ export const Menu = () => {
             <ul className="menu__list">
                 <MenuItem text="Strona główna" to="/"/>
                 <MenuItem text="O projekcie" to="/about"/>
-                <MenuItem text="Rejestracja" to="/register"/>
-                <MenuItem text="Logowanie" to="/login"/>
+                {/*<MenuItem text="Rejestracja" to="/register"/>*/}
+                {/*<MenuItem text="Logowanie" to="/login"/>*/}
             </ul>
         </nav>
     )
