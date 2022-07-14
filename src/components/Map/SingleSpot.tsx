@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {SpotEntity} from 'types';
+import {apiUrl} from "../../config/api";
 
 interface Props {
     id: string;
@@ -10,7 +11,7 @@ export const SingleSpot = (props: Props) => {
 
     useEffect(() => {
         (async () => {
-            const res = await fetch(`http://localhost:3001/spot/${props.id}`);
+            const res = await fetch(`${apiUrl}/spot/${props.id}`);
             const data = await res.json();
             setSpot(data);
         })();

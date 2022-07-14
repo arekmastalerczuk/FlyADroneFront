@@ -1,11 +1,12 @@
 import React, {useContext, useEffect, useState} from "react";
 import {MapContainer, Marker, Popup, TileLayer} from "react-leaflet";
 import {SearchContext} from "../../contexts/search.context";
-import './Map.css';
 import 'leaflet/dist/leaflet.css';
 import '../../utils/fix-map-icon';
 import {SimpleSpotEntity} from 'types';
 import {SingleSpot} from "./SingleSpot";
+import {apiUrl} from "../../config/api";
+import './Map.css';
 
 export const Map = () => {
     const {town, street} = useContext(SearchContext);
@@ -18,7 +19,7 @@ export const Map = () => {
 
     useEffect(() => {
         (async () => {
-            const res = await fetch(`http://localhost:3001/spot/search/${searchAddress}`);
+            const res = await fetch(`${apiUrl}/spot/search/${searchAddress}`);
             const data = await res.json();
             setSpots(data);
         })();
